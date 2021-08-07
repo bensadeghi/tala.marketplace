@@ -75,7 +75,7 @@ export default function Home() {
 						nfts.map((nft, i) => (
 							<div key={i} className="border shadow rounded-xl overflow-hidden">
 								<img src={nft.image} />
-								<a className="text-gray-500 pl-4" target="_blank" href={nft.url}>Meta on IPFS</a>
+								<a className="text-gray-500 pl-4" target="_blank" rel="noreferrer" href={nft.url}>Meta on IPFS</a>
 								<div className="p-4 pb-0">
 									<p style={{ height: '64px' }} className="text-2xl font-semibold text-gray-100">{nft.name}</p>
 									<div style={{ height: '70px', overflow: 'hidden' }}>
