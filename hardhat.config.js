@@ -1,4 +1,5 @@
-require("@nomiclabs/hardhat-waffle")
+require("@nomiclabs/hardhat-waffle");
+require("@nomiclabs/hardhat-etherscan");
 require("dotenv").config({path: "./.env"});
 
 module.exports = {
@@ -21,6 +22,9 @@ module.exports = {
         mnemonic: process.env.MNEMONIC
       }
     }
+  },
+  etherscan: {
+    apiKey: process.env.ETHERSCAN_API_KEY
   },
   solidity: {
     version: "0.8.4",
