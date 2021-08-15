@@ -63,7 +63,9 @@ export default function MyAssets() {
 		let listingPrice = await marketContract.listingPrice()
 
 		/* user will be prompted to pay the asking process to complete the transaction */
-		const transaction = await marketContract.updateMarketItem(nft.itemId, price, {
+		let transaction = await tokenContract.connect(signer).setApprovalForAll(nftmarketaddress, true)
+		await transaction.wait()
+		transaction = await marketContract.updateMarketItem(nft.itemId, price, {
 			value: listingPrice
 		})
 		await transaction.wait()
