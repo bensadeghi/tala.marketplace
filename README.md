@@ -1,6 +1,8 @@
 # Tala NFT Marketplace
 
-An Ethereum blockchain DApp, built using [Hardhat](https://hardhat.org/), [EthersJS](https://docs.ethers.io/v5/), [NextJS](https://nextjs.org/), [IPFS](https://ipfs.io/) and [OpenZeppelin](https://openzeppelin.com/)-based smart contracts
+An Ethereum blockchain NFT DApp, built using [Hardhat](https://hardhat.org/), [EthersJS](https://docs.ethers.io/v5/), [NextJS](https://nextjs.org/), [IPFS](https://ipfs.io/) and [OpenZeppelin](https://openzeppelin.com/)-based smart contracts
+
+Adapted from [this repo](https://github.com/dabit3/polygon-ethereum-nextjs-marketplace)
 
 DApp deployed [here](https://bensadeghi.github.io/tala.marketplace/)
 
